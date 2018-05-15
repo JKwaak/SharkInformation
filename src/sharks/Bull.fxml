@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="467.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="sharks.BullController">
+   <children>
+      <MediaView fx:id="videoBull" fitHeight="200.0" fitWidth="200.0" layoutX="21.0" layoutY="206.0" />
+      <ImageView fx:id="imageBull" fitHeight="149.0" fitWidth="230.0" layoutX="28.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bullMedia/bull.jpg" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="textBull" layoutX="358.0" layoutY="21.0" prefHeight="374.0" prefWidth="200.0" text="Bull Shark" />
+      <ButtonBar layoutX="21.0" layoutY="413.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button fx:id="playButton" mnemonicParsing="false" onAction="#play" text="Play" />
+            <Button fx:id="pauseButton" mnemonicParsing="false" onAction="#pause" text="Pause" />
+        </buttons>
+      </ButtonBar>
+      <Button fx:id="backButton" layoutX="485.0" layoutY="421.0" mnemonicParsing="false" onAction="#goToScene1" text="Back to Main" />
+   </children>
+</AnchorPane>
